@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Container */
+/* Container */
+/* Container */
+.signup-container {
+  /* Use a CSS variable for height, default to full screen */
+  --container-height: 80vh;
+  height: var(--container-height);
+
+  @apply w-full flex justify-center items-center bg-white ;
+}
+
+
+/* Form */
+/* Form */
+.signup-form {
+  @apply flex flex-col w-full max-w-md p-8 bg-orange-500 rounded-xl shadow-lg;
+  
+  /* Move it slightly up */
+  margin-top: -75px; /* adjust number as needed */
+}
+
+
+/* Title */
+.signup-title {
+  @apply text-white text-4xl md:text-5xl font-bold mb-4 text-center;
+}
+
+/* Subtitle text */
+.signup-subtext {
+  @apply text-white text-center mb-8;
+}
+
+/* Link */
+.signup-link {
+  @apply text-blue-500 hover:underline font-semibold;
+}
+
+/* Inputs */
+.signup-input {
+  @apply p-4 rounded-lg bg-white text-orange-500 placeholder-orange-500
+         focus:outline-none focus:ring-2 focus:ring-orange-600 text-center;
+}
+
+/* Spacing between inputs */
+.signup-input-email {
+  @apply mb-2;
+}
+
+.signup-input-password {
+  @apply mb-6;
+}
+
+/* Button */
+.signup-button {
+  @apply bg-orange-500 hover:bg-orange-600 text-white font-semibold 
+         p-4 rounded-lg transition-colors mb-4 mt-6;
+}
+
+/* Error */
+.signup-error {
+  @apply text-red-500 text-center mt-2;
+}
